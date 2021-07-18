@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<body>
+    <style>
+        body{background-image: url("/static/1-whytheweathe.png")}
+    </style>
+
+    <h1 >{{city}}</h1>
+
+    <table style="width:100%">
+        <form method="POST" action="result">
+             <p class="res_search"><input  contentEditable="true" type="TEXT" name="city" width="100" placeholder="Find Location"></p>
+        </form>
+
+        <tr>
+            <th>Status</th>
+            <th>Wind Speed</th>
+            <th>Humidity</th>
+            <th>Temperature</th>
+            <th>Temp Max-Min</th>
+        </tr>
+
+        <tr>
+            <td>{{status}}</td>
+            <td>{{wind}}</td>
+            <td>{{humidity}}</td>
+            <td>{{temp}}</td>
+            <td>{{temp_min_max}}</td>
+        </tr>
+    </table>
+</body>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<style>
+    body{background-image: url("/static/pic.png")}
+</style>
+
+<form method="POST" action="result">
+    <h1 >WEATHER</h1>
+    <div >
+        <p ><input contentEditable="true" type="TEXT" name="city" width="100" placeholder="Find Location"></p>
+    </div>
+</form>
+
+{% endblock %}
